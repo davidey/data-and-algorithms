@@ -1,4 +1,4 @@
-import { gridTraveler } from "./dynamic-grid-traveler";
+import { gridTraveler } from "./grid-traveler";
 import { expect } from "chai";
 
 describe("Grid traveler", () => {
