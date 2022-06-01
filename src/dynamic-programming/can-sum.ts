@@ -2,10 +2,6 @@ interface Memo {
   [key: number]: boolean;
 }
 
-const getMemoKey = (m: number, n: number): string => {
-  return `${Math.max(m, n)}-${Math.min(m, n)}`;
-};
-
 /**
  * Returns whether is possible or not to generate a sum adding the numbers from the array
  * The numbers in the array may be reused multiple times
