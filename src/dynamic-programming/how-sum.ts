@@ -19,11 +19,11 @@ export const howSum = (
     return memo[targetSum];
   }
 
+  if (targetSum < 0) return null;
+  if (targetSum === 0) return [];
+
   for (const n of numbers) {
     const nextSum = targetSum - n;
-
-    if (nextSum < 0) continue;
-    if (nextSum === 0) return [n];
 
     const result = howSum(nextSum, numbers, memo);
 
